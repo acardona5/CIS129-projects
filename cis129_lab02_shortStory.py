@@ -1,4 +1,4 @@
-# Auther: Amy Cardona
+# Author: Amy Cardona
 # My first Python lab in my CIS129 course
 # Print a simple short story
  print('Once upon a time...\nThere was a chicken gazing over a river. The river was wide and seemed too daunting to cross by\
