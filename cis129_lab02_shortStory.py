@@ -1,6 +1,6 @@
-#Author: Amy Cardona
-#My first Python lab in my CIS129 course
-#Print a short story
+# Author: Amy Cardona
+# My first Python lab in my CIS129 course
+# Print a short story
 print('Once upon a time...\nThere was a chicken gazing over a river. The river was wide and seemed too daunting to cross by \
 flight. Yet over that river, the most enchanting tall glass covered medow glistening in the sun awaited. Whilst longing \
 to be on the other side of the river a tiny fairy with iridescent wings fluttering apeared above, manifested from the wishes \
