@@ -3,6 +3,7 @@
 # Lab 3: Coffe Shop
 #This program calculates the total cost of a coffee order
 #based on the number of items ordered and cost per item
+#updates add more menu items and print out new reciept based on items
 
 #variables
 muffin_price = 4
