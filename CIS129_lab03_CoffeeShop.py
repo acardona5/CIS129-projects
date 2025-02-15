@@ -14,7 +14,7 @@ stars = '*' * 35
 print(f'-My Coffee and Muffin Shop Receipt-')
 print(stars)
 #input
-muffin_qty = int(input("Number of muffins bought\n "))
+muffin_qty = int(input("Number of muffins bought?\n "))
 coffee_qty = int(input("Number of coffees bought?\n "))
 print(stars)
 
