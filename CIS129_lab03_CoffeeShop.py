@@ -7,10 +7,11 @@
 #variables
 muffin_price = 4
 coffee_price = 5
-tax = 6
+tax = 6   #percentage
 tax_rate = tax / 100
 stars = '*' * 35
 
+print(f'-My Coffee and Muffin Shop Receipt-')
 print(stars)
 #input
 muffin_qty = int(input("Number of muffins bought\n "))
@@ -26,9 +27,12 @@ total = subtotal
 total = total + addedtax
 
 #output/receipt
-print(coffee_qty,'Coffees bought at $', coffee_price, ' each: $', coffee_qty * coffee_price)
-print(muffin_qty,'Muffins bought at $', muffin_price, ' each: $', muffin_qty * muffin_price)
-print(tax, '% Tax: $', addedtax)
+print(coffee_qty,'Coffees bought at $', coffee_price, 'each: $', float(coffee_qty * coffee_price))
+print(muffin_qty,'Muffins bought at $', muffin_price, 'each: $', float(muffin_qty * muffin_price))
+print('---------')
+print('Subtotal: $', float(subtotal))
+print(tax, '% Tax: $',addedtax)
 print('---------')
 print('Total: $', total)
+print('Enoy your sweet treats! ^0^')
 print(stars)
