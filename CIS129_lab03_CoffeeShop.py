@@ -1,6 +1,6 @@
 # Amy Cardona
 # CIS129
-# Lab 3: Coffe Shop
+# Lab 3: Coffee Shop
 #This program calculates the total cost of a coffee order
 #based on the number of items ordered and cost per item
 
