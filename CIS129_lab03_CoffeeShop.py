@@ -27,12 +27,12 @@ total = subtotal
 total = total + addedtax
 
 #output/receipt
-print(coffee_qty,'Coffees bought at $', coffee_price, 'each: $', float(coffee_qty * coffee_price))
-print(muffin_qty,'Muffins bought at $', muffin_price, 'each: $', float(muffin_qty * muffin_price))
+print(str(coffee_qty) + 'Coffees bought at $' + str(coffee_price) + 'each: $' + str(float(coffee_qty * coffee_price)))
+print(str(muffin_qty) + 'Muffins bought at $' + str(muffin_price) + 'each: $' + str(float(muffin_qty * muffin_price)))
 print('---------')
-print('Subtotal: $', float(subtotal))
-print(tax, '% Tax: $',addedtax)
+print('Subtotal: $' + str(float(subtotal)))
+print(str(tax) + '% Tax: $' + str(float(addedtax)))
 print('---------')
-print('Total: $', total)
+print('Total: $' + str(total))
 print('Enoy your sweet treats! ^0^')
 print(stars)
