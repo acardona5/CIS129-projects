@@ -31,7 +31,7 @@ total = subtotal
 total = total + addedtax
 
 #output/receipt
-print(f'{coffee_qty} Coffees bought at ${coffee_price} each: ${coffee_qty * coffee_price:.2f}')
+print(str(coffee_qty) + 'Coffees bought at $' + str(coffee_price) + 'each: $' + str(coffee_qty * coffee_price))
 print(muffin_qty,'Muffins bought at $', muffin_price, 'each: $', float(muffin_qty * muffin_price))
 print(chocolateChipCookie_qty,'Chocolate Chip Cookies bought at $', chocolateChipCookie_price, 'each: $', float(chocolateChipCookie_qty * chocolateChipCookie_price))
 print(icedTea_qty,'Iced Teas bought at $', icedTea_price, 'each: $', float(icedTea_qty * icedTea_price))
