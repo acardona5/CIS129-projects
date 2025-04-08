@@ -1,0 +1,14 @@
+#Amy Cardona
+#lab 8
+#Palindrome tester
+#ignore case sensitivity
+#inputvalidation- no numbers, spaces or special characters
+
+
+
+#display "palindrome tester"
+#display instructions" enter a word to see if it's a palindrome!"
+create stack=[]
+user_input= input()
+"""palindrome test function"""
+for charcter in user_input string stack.append()
