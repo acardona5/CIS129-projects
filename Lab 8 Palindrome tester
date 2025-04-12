@@ -12,3 +12,31 @@ create stack=[]
 user_input= input()
 """palindrome test function"""
 for charcter in user_input string stack.append()
+
+def is_palindrome(s):
+
+    filtered_chars = [char for char in s if char.isalnum()]
+    
+    # lowercase to ignore case sensitivity
+    clean_string = ''.join(filtered_chars).lower()
+
+    stack = []
+    
+    # push characters to stack
+    for char in clean_string:
+        stack.append(char)
+    
+    #check if the string is the same backwards
+    for char in clean_string:
+        if char != stack.pop():  # compare with the popped character?
+            return False
+        
+    
+    return True
+
+
+print('Welcome to the Palindrome Tester!')
+print('--------------------------------')
+# Test the function
+user_input = input("Enter a word to check if it's a palindrome: ")
+print("'"+ str(user_input)+"' is a palindrome? "+ str(is_palindrome(user_input)))
