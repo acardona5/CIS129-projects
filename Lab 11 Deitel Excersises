@@ -1,0 +1,69 @@
+#Amy Cardona
+#CIS 129 lab 11
+#complete excersise 9.1, 9.2, 9.3 
+
+
+# Exercise 9.1: Write a program that reads a file containing grades and calculates the average grade.
+# grades_writer.py
+
+# Open file in write mode (use 'a' for append mode)
+with open("grades.txt", "w") as file:
+    while True:
+        grade = input("Enter a grade (or 'done' to finish): ")
+        if grade.lower() == 'done':
+            break
+        if grade.isdigit():
+            file.write(grade + "\n")
+        else:
+            print("Invalid input. Please enter a number or 'done'.")
+
+
+# Exercise 9.2: Write a program that reads the grades from the file and calculates the average.
+# grades_reader.py
+
+total = 0
+count = 0
+
+try:
+    with open("grades.txt", "r") as file:
+        print("Grades:")
+        for line in file:
+            grade = int(line.strip())
+            print(grade)
+            total += grade
+            count += 1
+
+    if count > 0:
+        average = total / count
+        print(f"\nTotal: {total}")
+        print(f"Count: {count}")
+        print(f"Average: {average:.2f}")
+    else:
+        print("No grades found.")
+
+except FileNotFoundError:
+    print("grades.txt file not found.")
+
+# Exercise 9.3: Write a program that reads the grades from the file and calculates the average.
+# grades_reader.py
+
+import csv
+
+with open("grades.csv", "w", newline="") as file:
+    writer = csv.writer(file)
+    
+    while True:
+        first_name = input("Enter first name (or 'done' to finish): ")
+        if first_name.lower() == 'done':
+            break
+        last_name = input("Enter last name: ")
+        
+        try:
+            exam1 = int(input("Enter grade for exam 1: "))
+            exam2 = int(input("Enter grade for exam 2: "))
+            exam3 = int(input("Enter grade for exam 3: "))
+        except ValueError:
+            print("Invalid input. Please enter numeric grades.")
+            continue
+
+        writer.writerow([first_name, last_name, exam1, exam2, exam3])
